@@ -1,0 +1,110 @@
+DirectoryIndex index.php
+
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+# ========================================
+# SECURITY RULES
+# ========================================
+<Files "config.php">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+<FilesMatch "\.(config|conf)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "\.log$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_alias.c>
+    RedirectMatch 403 ^logs(/|$)
+</IfModule>
+
+<Files "composer.json">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+<Files "composer.lock">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+<FilesMatch "^\.env">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "^(?!(index|log-manager|cleanup-logs)\.php$).*\.php$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_alias.c>
+    RedirectMatch 403 ^vendor/.*$
+    RedirectMatch 403 ^tests/.*$
+</IfModule>
+
+# ========================================
+# REWRITES
+# ========================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Handle Authorization header for IONOS
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect all requests to index.php if the file/directory doesn't exist
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# Fallback for servers without mod_rewrite
+FallbackResource index.php
+
+# Fallback for Authorization header on some CGI/FastCGI setups
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase Authorization "^(.*)$" HTTP_AUTHORIZATION=$1
+</IfModule>

@@ -1,0 +1,672 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+ <head> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=788541903"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=788541903"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=788541903"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=788541903"></script> 
+  <script defer src="rw/elements/com.realmac.corepack/alpine.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap.min.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=788541903"></script> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="canonical" href="https://www.multithemes.com/elements/future/" /> 
+  <meta name="robots" content="index, follow" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Pro license) 1.6.2 (23988)" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:site_name" content="MY WEBSITE" /> 
+  <meta property="og:title" content="Home" /> 
+  <meta property="og:url" content="https://www.multithemes.com/elements/future/" /> 
+  <title>Home</title> 
+  <link href="index.css?rwcache=788541903" media="all" rel="stylesheet" type="text/css" /> 
+  <script src="rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/modal.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=788541903"></script> 
+  <script src="rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=788541903"></script> 
+  <style lang="css">
+    /* Required for alpine.js x-cloak directive to work */
+    [x-cloak] {
+        display: none !important;
+    }
+
+    [data-rwx-droparea] {
+        /* width: 100%; */
+        min-width: 60px !important;
+        /* height: 100%; */
+    }
+
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style> 
+  <link rel="stylesheet" type="text/css" media="all" href="rw/styles/consolidated.css?rwcache=788541903" /> 
+ </head> 
+ <body class="bg-surface-200 dark:bg-surface-800"> 
+  <div x-data="navigationStandard('mobile-menu-rwEE12BFE1_002D_4104_9744_05CE1D4E9BB5')" class="relative z-50"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-black-500 bg-opacity-[0%] dark:bg-opacity-[0%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-black-900 bg-opacity-[90%] dark:bg-opacity-[90%] backdrop-blur-[0px] shadow-none rounded-tl-md rounded-tr-md rounded-bl-md rounded-br-md border-t-0 border-r-0 border-b-0 border-l-0 border-black-900 top-4 right-2.5 bottom-auto left-2.5" tabindex="-1"> 
+    <div class="flex items-center justify-between"> 
+     <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out absolute inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-950 hover:text-surface-200 top-8 right-8"> 
+      <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-600 hover:text-text-950"> 
+       <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+      </svg> </button> 
+    </div> 
+    <nav> 
+     <ul class=""> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-body text-lg text-shadow-none font-[300] tracking-wide hover:text-text-950 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="./">Home</a> 
+       </div> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="overflow-hidden relative block w-full h-full" id="rwC0EF2B60_DF50_47D6_8EF9_D7D12F787736"> 
+   <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+    <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-[url(resources/lake.jpg)] bg-cover bg-no-repeat bg-center"> 
+    </div> 
+   </div> 
+   <header class="rw209520E2_51F5_4358_A941_179A4D17A15D group/container group/rw209520E2_51F5_4358_A941_179A4D17A15D [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute z-[0] inset-0 grid w-full h-[120vh]" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer w-auto h-full self-auto justify-self-auto gap-0">
+     <div class="w-0 h-0 bg-brand-500 bg-opacity-[0%] dark:bg-opacity-[0%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu overflow-hidden"> 
+    </div> 
+    <div class="relative z-20 false  bg-black-950 bg-opacity-[50%] dark:bg-opacity-[50%]"></div> 
+   </header>
+   <header class="group/rwEE12BFE1_002D_4104_9744_05CE1D4E9BB5 group/navbar items-center relative flex container w-full h-auto mt-4 mb-0 ml-auto mr-auto" id=""> 
+    <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-1.5 pb-1.5 pl-3.5 pr-3.5"> 
+     <!-- Logo --> 
+     <div class="flex lg:flex-1 pt-0 pb-0 pl-0 pr-0"> 
+      <span class="sr-only">MY WEBSITE</span> 
+      <img class="w-[100px] h-auto" src="resources/7blank.png" alt="" /> 
+     </div> 
+     <!-- Mobile menu button --> 
+     <div class="flex lg:hidden"> 
+      <div x-data @click="$dispatch('navigation-standard-toggle', 'mobile-menu-rwEE12BFE1_002D_4104_9744_05CE1D4E9BB5')" class="cursor-pointer text-text-950 hover:text-surface-200"> 
+       <div class="w-8 h-auto block" id="" rwresourcedropzone="svg"> 
+        <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+         <path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z" />
+        </svg> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Desktop items --> 
+     <div class="hidden lg:flex gap-10"> 
+      <div x-data="desktopSubmenu" class="relative"> 
+       <a href="./" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-body text-lg text-shadow-none font-[300] tracking-wide hover:text-text-950 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Home </a> 
+      </div> 
+     </div> 
+     <!-- Desktop right items --> 
+     <div class="hidden lg:flex lg:justify-end lg:flex-1"> 
+     </div> 
+    </nav> 
+   </header>
+   <div class="rwFFDA4A1B_7DA0_479B_A798_A9FCCF4671C1 group/container group/rwFFDA4A1B_7DA0_479B_A798_A9FCCF4671C1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto min-w-0 min-h-[95vh] max-w-auto max-h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer w-full h-auto self-center justify-self-center gap-md pt-0 pb-40 pl-0 pr-0">
+     <div class="group/rw52C52822_2F91_4B4F_8F0A_40A3447DC57F group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="fadeUpIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="0px" data-reveal-duration="0.6" data-reveal-easing="power0" data-reveal-end="top top" data-reveal-exit-animation="fadeUpOut" data-reveal-id="reveal----fade" data-reveal-play="enter-exit" data-reveal-scrub="false" data-reveal-start="top center"> 
+      <div class="rw9599920E_EE41_4A39_928A_CD3DE450979D group/container group/rw9599920E_EE41_4A39_928A_CD3DE450979D [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-full mt-auto mb-auto ml-auto mr-auto anima-overlayXX" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-2 pt-auto pb-auto pl-0 pr-0">
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50 dark:text-text-900 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-5xl sm:text-7xl lg:text-8xl font-[700] tracking-tight leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Canarische Eilanden </h1>
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-700 dark:text-text-900 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg sm:text-2xl md:text-3xl font-[400] tracking-normal leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Welkom op mijn persoonlijke <span class="text-brand-500">gallerij</span> </h1>
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-800 dark:text-text-900 text-opacity-[45%] dark:text-opacity-[45%] font-heading text-sm font-[400] tracking-wide leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-brand-50">Waar mijn </span><span class="text-brand-600">avontuur</span><span class="text-brand-50"> begint!</span> </h1>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </div> 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu overflow-hidden"> 
+    </div> 
+   </div>
+   <div class="rw023FF33E_C304_410F_9B7D_20430ED97D65 group/container group/rw023FF33E_C304_410F_9B7D_20430ED97D65 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute top-auto right-md bottom-auto left-md grid w-[110%] h-[250px] transform origin-center scale-[100%] rotate-[-6deg] skew-x-[0deg] skew-y-[0deg] translate-x-[-25px] translate-y-[-120px] mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+     <div class="w-0 h-0 bg-brand-700 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-white-600 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    </div> 
+   </div> 
+  </div>
+  <div class="rwB0B03247_8EEF_4E79_B49E_590791AE8942 group/container group/rwB0B03247_8EEF_4E79_B49E_590791AE8942 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+    <div class="rw0541DBD4_0CB1_488B_9053_B8564BDE785A group/container group/rw0541DBD4_0CB1_488B_9053_B8564BDE785A [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-1 row-span-auto grid w-full h-auto min-w-0 min-h-0 max-w-[1000px] max-h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer w-auto h-auto self-center justify-self-center gap-5 pt-0 pb-10 pl-5 pr-5 md:pt-0 md:pb-20 md:pl-5 md:pr-5">
+      <div class="rw50C495B0_83F7_45BA_84BC_0A0928CF4E0B group/container group/rw50C495B0_83F7_45BA_84BC_0A0928CF4E0B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-2 sm:col-span-2 lg:col-span-2 row-span-auto grid w-full h-auto" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer w-auto h-auto self-center justify-self-end gap-md">
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-100 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-4xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> 7 Bewoonbare <span class="text-brand-500">Eilanden</span>! </h1>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </div>
+      <section class="rwCB098F2A_268E_4036_B72E_9FCA04A18A2B group/container group/rwCB098F2A_268E_4036_B72E_9FCA04A18A2B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 overflow-hidden isolate grid w-auto h-auto mt-0 mb-0 ml-0 mr-0 rounded-tl-none rounded-tr-none rounded-bl-sm rounded-br-sm" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer w-full h-auto self-auto justify-self-auto gap-0 pt-6 pb-6 pl-5 pr-5">
+        <div class="group/rwDA3ED61B_7B3A_487F_9767_20736DE2D58B group/reveal block absolute inset-0 block w-auto h-full mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0" data-reveal="" data-reveal-animation="slideLeftIn" data-reveal-degrees="90" data-reveal-delay="1.1" data-reveal-distance="100%" data-reveal-duration="1.6" data-reveal-easing="expo.out" data-reveal-end="top top" data-reveal-exit-animation="slideLeftOut" data-reveal-id="reveal-slide" data-reveal-play="enter-always" data-reveal-scrub="false" data-reveal-start="top bottom"> 
+         <div class="rwB952D58B_FCBD_4063_B6AA_C192627F176E group/container group/rwB952D58B_FCBD_4063_B6AA_C192627F176E [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-full mt-0 mb-0 ml-auto mr-auto rounded-tl-none rounded-tr-none rounded-bl-sm rounded-br-sm" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer w-auto h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+           <div class="w-auto h-0.5 bg-brand-500 bg-opacity-[0%] dark:bg-opacity-[0%]" aria-orientation="horizontal" id="" role="separator">
+             &nbsp; 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-none rounded-tr-none rounded-bl-sm rounded-br-sm border-surface-500/[100%] bg-gradient-to-l from-text-700/[--bgGradientFromOpacity] dark:from-surface-700/[--bgGradientFromOpacity] [--bgGradientFromOpacity:100%] from-[0%] to-text-950/[--bgGradientToOpacity] dark:to-surface-900/[--bgGradientToOpacity] [--bgGradientToOpacity:100%] to-[100%] overflow-hidden"> 
+          </div> 
+         </div> 
+        </div>
+        <div class="group/rwF29E77A1_27BF_490A_A25F_4CDE90745042 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 sm:grid-cols-3 md:grid-cols-4 grid-rows-auto gap-x-0 gap-y-2 grid-flow-row justify-items-[normal] justify-normal items-center content-center" data-filter-tags="" id=""> 
+         <div class="rw17F42996_2582_4CCD_BFDF_7A65582911EA group/container group/rw17F42996_2582_4CCD_BFDF_7A65582911EA [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-auto sm:col-span-2 md:col-span-3 row-span-auto grid w-full h-auto mt-auto mb-auto ml-auto mr-auto" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-0 pb-0 pl-0 pr-0">
+           <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-text-200 dark:text-text-900 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-2xl font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-right" id=""> De Canarische Eilanden heeft 7 grote bewoonbare eilanden, er zijn ook nog 13 andere eilanden die momenteel nog niet bewoond zijn! </h2>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="rwE61CABCE_EF73_475A_8B32_14F7490D014A group/container group/rwE61CABCE_EF73_475A_8B32_14F7490D014A [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-0 mr-0 sm:mt-0 sm:mb-0 sm:ml-0 sm:mr-auto lg:mt-0 lg:mb-0 lg:ml-0 lg:mr-0" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer w-auto h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+           <div class="group/rwE5947701_0FB3_428F_84A7_ED10DFE194C8 group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="slideUpIn" data-reveal-degrees="90" data-reveal-delay="0.1" data-reveal-distance="100px" data-reveal-duration="1.3" data-reveal-easing="expo.out" data-reveal-end="top top" data-reveal-exit-animation="slideUpOut" data-reveal-id="reveal-reveal" data-reveal-play="enter-once" data-reveal-scrub="false" data-reveal-start="top bottom"> 
+            <div class="group/rw099EE7FA_818F_40DF_8E42_8892B0EF8CDA group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="slideLeftIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="10px" data-reveal-duration="0.5" data-reveal-easing="back.out" data-reveal-end="top top" data-reveal-exit-animation="slideLeftOut" data-reveal-id="reveal-slide" data-reveal-play="enter-exit" data-reveal-scrub="true" data-reveal-start="top center"> 
+             <div class="transform-gpu block w-[100px] h-auto" id="" rwresourcedropzone="image"> 
+              <picture> 
+               <!-- Fallback img element --> 
+               <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-sm rounded-tr-sm rounded-bl-sm rounded-br-sm border-surface-500/[100%] object-center aspect-[1.7842856645584106]" src="resources/landscape-15.jpg" alt="" width="2498" height="1400" decoding="async" /> 
+              </picture> 
+             </div> 
+            </div> 
+           </div>
+           <div class="group/rw03012276_8517_4D2B_A383_C4BC2694487B group/reveal block absolute top-0 right-md bottom-md left-0 block w-full h-auto" data-reveal="" data-reveal-animation="fadeUpIn" data-reveal-degrees="90" data-reveal-delay="0.8" data-reveal-distance="100px" data-reveal-duration="1.3" data-reveal-easing="expo.out" data-reveal-end="top top" data-reveal-exit-animation="fadeUpOut" data-reveal-id="reveal-reveal" data-reveal-play="enter-once" data-reveal-scrub="false" data-reveal-start="top bottom"> 
+            <div class="group/rw05D696E4_AFE5_4939_AC9B_B9B363CF763B group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="slideLeftIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="50px" data-reveal-duration="0.5" data-reveal-easing="back.out" data-reveal-end="top top" data-reveal-exit-animation="slideLeftOut" data-reveal-id="reveal-slide" data-reveal-play="enter-exit" data-reveal-scrub="true" data-reveal-start="top center"> 
+             <div class="transform-gpu block w-[120px] h-auto" id="" rwresourcedropzone="image"> 
+              <picture> 
+               <!-- Fallback img element --> 
+               <img class="max-w-[100%] w-full transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[-12px] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-sm rounded-tr-sm rounded-bl-sm rounded-br-sm border-surface-500/[100%] object-center aspect-[1.7842856645584106]" src="resources/landscape-03.jpg" alt="" width="2498" height="1400" decoding="async" /> 
+              </picture> 
+             </div> 
+            </div> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div> 
+        </div>
+       </div> 
+       <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-none rounded-tr-none rounded-bl-sm rounded-br-sm border-surface-500/[100%] bg-surface-50 dark:bg-surface-300 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+       </div> 
+      </section>
+     </div> 
+     <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg border-surface-500/[100%] overflow-hidden"> 
+     </div> 
+    </div>
+    <div class="rw28C49542_2020_47B8_8381_5BE21287800B group/container group/rw28C49542_2020_47B8_8381_5BE21287800B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid container w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-8 pt-0 pb-0 pl-5 pr-5 lg:pt-0 lg:pb-0 lg:pl-5 lg:pr-5">
+      <section class="rw99B2F61B_4110_4283_98C9_092623561FB4 group/container group/rw99B2F61B_4110_4283_98C9_092623561FB4 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-10 pb-20 pl-5 pr-5">
+        <div class="group/rw9B0B52F6_B3F7_47F0_8188_1D357903C756 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 md:grid-cols-3 grid-rows-auto gap-x-10 gap-y-5 grid-flow-row justify-items-normal justify-normal items-center content-center" data-filter-tags="" id=""> 
+         <div class="rw508B5A7E_935B_4627_8018_1C6CA536BCFF group/container group/rw508B5A7E_935B_4627_8018_1C6CA536BCFF [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-2 sm:col-span-2 md:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+           <div class="group/rw318CE401_633F_4F09_BAC3_BD10B09C0C04 group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="slideRightIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="100px" data-reveal-duration="1.3" data-reveal-easing="expo.out" data-reveal-end="top top" data-reveal-exit-animation="slideRightOut" data-reveal-id="reveal-reveal" data-reveal-play="enter-always" data-reveal-scrub="false" data-reveal-start="top bottom"> 
+            <div class="transform-gpu block w-[100%] h-auto min-w-0 min-h-0 max-w-[350px] max-h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+             <picture> 
+              <!-- Fallback img element --> 
+              <img class="max-w-[100%] w-full shadow opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-lg rounded-tr-lg rounded-bl-lg rounded-br-lg border-surface-500/[100%] object-cover object-center aspect-[auto] md:aspect-[4/5] xl:aspect-[auto]" src="resources/prof-foto.jpg" alt="" width="1536" height="2048" decoding="async" /> 
+             </picture> 
+            </div> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="rwE598E6D4_A85E_4FD8_9FC6_11525BDC6E21 group/container group/rwE598E6D4_A85E_4FD8_9FC6_11525BDC6E21 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-2 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-5 pt-0 pb-0 pl-0 pr-0">
+           <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-rose-800 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Gepensioneerde Avonturier! </h1>
+           <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-100 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-4xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Jozef Vanheuckelom </h1>
+           <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto text-text-400 dark:text-text-600 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Welkom!<br />Mijn naam is Jozef Vanheuckelom. Ik ben momenteel op pensioen en ik doe niets liever dan op vakantie gaan naar mijn favoriete vakantiebestemming, de Canarische Eilanden!<br />Op deze webpagina gaat u allerlei mooie foto’s kunnen bewonderen die ikzelf heb mogen nemen van deze prachtige eilanden met hun prachtige omgevingen. Deze webpagina zal dus fungeren als mijn persoonlijke gallerij! </h2>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div> 
+        </div>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </section>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </div>
+    <div class="overflow-hidden relative block w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="rw51349E1B_D8CC_4239_8203_3F544796389C"> 
+     <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+      <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-[url(resources/view-man.jpg)] bg-cover bg-no-repeat bg-center"> 
+      </div> 
+     </div> 
+     <section class="rwF6D9AA7C_6F68_4371_90C0_74631912863C group/container group/rwF6D9AA7C_6F68_4371_90C0_74631912863C [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-10 pb-10 pl-5 pr-5 lg:pt-20 lg:pb-20 lg:pl-5 lg:pr-5">
+       <div class="group/rwA8E6B618_D11F_4B26_9AB6_38D856135594 group/grid grid w-full h-auto mt-5 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 bg-surface-300 bg-opacity-[7%] dark:bg-opacity-[7%] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-auto gap-x-4 gap-y-3 grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
+        <div class="rwEC10394B_7BEF_48EA_B5F3_421513A8842B group/container group/rwEC10394B_7BEF_48EA_B5F3_421513A8842B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/gc.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Gran Canaria </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw2F39723F_A34C_438B_8B03_C39364068573 group/container group/rw2F39723F_A34C_438B_8B03_C39364068573 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[40%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/tenerife.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Tenerife </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw2686C87A_DC52_41F1_95F5_022E77FA15E2 group/container group/rw2686C87A_DC52_41F1_95F5_022E77FA15E2 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/fv.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Fuerte Ventura </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw974A7FCF_DF81_4EC5_A128_C279C0335977 group/container group/rw974A7FCF_DF81_4EC5_A128_C279C0335977 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/la-gomera.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> La Gomera </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw306F245B_F097_4517_94D7_99EC5E182A85 group/container group/rw306F245B_F097_4517_94D7_99EC5E182A85 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/lapalma.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> La Palma </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rwBB2CCD60_C709_4D3F_ABB3_8CFD14D3C609 group/container group/rwBB2CCD60_C709_4D3F_ABB3_8CFD14D3C609 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/lz.png" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lanzarote </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw2F51FBCF_4A06_4FA1_9271_F8BA966BF058 group/container group/rw2F51FBCF_4A06_4FA1_9271_F8BA966BF058 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.4970059394836426]" src="resources/el-hier.jpeg" alt="" width="250" height="167" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> El Hierro </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div>
+        <div class="rw394BC82B_ED49_4D68_A4BA_9B89CB7165C0 group/container group/rw394BC82B_ED49_4D68_A4BA_9B89CB7165C0 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+         <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+          <div class="transform-gpu block w-[60%] h-auto mt-0 mb-0 ml-14 mr-0 pt-3 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+           <picture> 
+            <!-- Fallback img element --> 
+            <img class="max-w-[100%] w-full transition-all duration-[300ms] delay-[0ms] ease-in-out shadow-lg opacity-[50%] hover:shadow hover:opacity-[100%] object-center aspect-[1.502732276916504]" src="resources/la-grac.jpeg" alt="" width="275" height="183" decoding="async" /> 
+           </picture> 
+          </div>
+          <p class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-4 pb-0 pl-0 pr-0 text-text-50 text-opacity-[100%] dark:text-opacity-[100%] font-quote text-base font-[400] tracking-widest leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> La Graciosa </p>
+         </div> 
+         <div class="z-0 transform-gpu overflow-hidden"> 
+         </div> 
+        </div> 
+       </div>
+      </div> 
+      <div class="z-0 transform-gpu overflow-hidden"> 
+      </div> 
+      <div class="relative z-20 false  bg-black-50 bg-opacity-[20%] dark:bg-opacity-[20%]"></div> 
+     </section> 
+    </div>
+    <div class="rwAD851C1E_B8D2_49B3_9AE8_0C4C772699FF group/container group/rwAD851C1E_B8D2_49B3_9AE8_0C4C772699FF [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid container w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-8 pt-0 pb-0 pl-5 pr-5 lg:pt-0 lg:pb-0 lg:pl-5 lg:pr-5">
+      <section class="rw8D395C06_CB48_4C79_B568_5364AC7219A4 group/container group/rw8D395C06_CB48_4C79_B568_5364AC7219A4 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-20 pb-10 pl-5 pr-5">
+        <div class="group/rwBBD3660E_BE16_4C75_96F7_29E74CB20C76 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 md:grid-cols-3 grid-rows-auto gap-x-10 gap-y-5 grid-flow-row justify-items-normal justify-normal items-center content-center" data-filter-tags="" id=""> 
+         <div class="rw41F06963_6B12_4872_A0AC_ECC5B0A3E5A2 group/container group/rw41F06963_6B12_4872_A0AC_ECC5B0A3E5A2 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-2 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-5 pt-0 pb-0 pl-0 pr-0">
+           <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-rose-800 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> GALLERIJ </h1>
+           <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-100 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-4xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Een kijkje door mijn <span class="text-brand-500">avonturen!</span> </h1>
+           <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto text-text-400 dark:text-text-600 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Neem gerust eens een kijkje door mijn persoonlijke gallerij!<br />Hier kan je namenlijk een gedeeltje van al mijn herinneringen terugvinden die gefotografeerd zijn! <br /><br />Deze zullen namenlijk in de toekomst nog aangevuld worden! </h2>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="rw08C06C99_E57A_4862_8A98_CD0B2ABEA00B group/container group/rw08C06C99_E57A_4862_8A98_CD0B2ABEA00B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 col-span-2 sm:col-span-2 md:col-span-1 row-span-auto grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+           <div class="group/rw53510C8C_4B1F_4708_944F_108D2E98C343 group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="slideLeftIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="100px" data-reveal-duration="1.3" data-reveal-easing="expo.out" data-reveal-end="top top" data-reveal-exit-animation="slideLeftOut" data-reveal-id="reveal-reveal" data-reveal-play="enter-always" data-reveal-scrub="false" data-reveal-start="top bottom"> 
+            <div class="transform-gpu block w-[100%] h-auto min-w-0 min-h-0 max-w-[350px] max-h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+             <picture> 
+              <!-- Fallback img element --> 
+              <img class="max-w-[100%] w-full shadow opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl-sm rounded-tr-sm rounded-bl-sm rounded-br-sm border-surface-500/[100%] object-cover object-center aspect-[auto] md:aspect-[4/5] xl:aspect-[auto]" src="resources/beach-legs.jpg" alt="" width="1400" height="1400" decoding="async" /> 
+             </picture> 
+            </div> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu overflow-hidden"> 
+          </div> 
+         </div> 
+        </div>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </section>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </div>
+   </div> 
+   <div class="z-0 transform-gpu bg-white-50 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   </div> 
+  </div>
+  <div class="overflow-hidden relative block w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="rw1164A1B2_ADC1_453C_A437_AF4DF530B75E"> 
+   <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+    <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-[url(resources/landscape-07.jpg)] bg-cover bg-no-repeat bg-center"> 
+    </div> 
+   </div> 
+   <div class="rw70CC9092_A1D3_4364_B515_143D09766612 group/container group/rw70CC9092_A1D3_4364_B515_143D09766612 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute z-[1] top-auto right-md bottom-auto left-md grid lg:grid w-[110%] h-[270px] transform origin-center scale-[100%] rotate-[-6deg] skew-x-[0deg] skew-y-[0deg] translate-x-[-25px] translate-y-[-140px] mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+     <div class="w-0 h-0 bg-brand-700 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-white-600 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    </div> 
+   </div>
+   <section class="rwED33EC0A_FDF6_4C53_B672_E7FC864A8B2A group/container group/rwED33EC0A_FDF6_4C53_B672_E7FC864A8B2A [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-52 pb-20 pl-5 pr-5 sm:pt-48 sm:pb-20 sm:pl-5 sm:pr-5">
+     <div class="group/rw75CB4666_98BE_4650_894F_A8E0C8F221F5 group/flex transform flex w-auto h-auto mt-0 mb-0 ml-auto mr-0 pt-0 pb-0 pl-0 pr-0 gap-x-2.5 gap-y-2 flex-row flex-nowrap items-center justify-items-[normal] content-normal justify-end" data-filter-tags="" id=""> 
+      <div class="w-7 h-auto block transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-[95%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px]" id="" rwresourcedropzone="svg"> 
+       <svg class="w-7 h-auto transition-all duration-[300ms] delay-[0ms] ease-in-out fill-white-300/[--svgOpacity] text-white-300/[--svgOpacity] [--svgOpacity:_40%] hover:fill-white-500/[--svgOpacity] hover:text-white-500/[--svgOpacity] hover:[--svgOpacity:100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+        <path d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"></path>
+       </svg> 
+      </div> 
+     </div>
+     <div class="group/rwDA3747AF_8117_4B78_AA3C_6F90144DF36E group/flex transform flex w-full h-auto transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[-0px] gap-x-0 gap-y-0 flex-row flex-wrap items-center justify-items-[normal] content-normal justify-between" data-filter-tags="" id=""> 
+      <div class="group/rw98E0E481_E5E1_4181_8EF1_28029EDC4711 group/flex transform flex w-auto h-auto gap-x-2 gap-y-0 flex-row flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+       <nav class="flex flex-row items-center justify-start gap-3 w-auto h-auto"> 
+        <a class="flex items-center transition-all duration-[300ms] delay-[0ms] ease-in-out font-heading text-sm font-[400] tracking-normal normal hover text-text-600/[var(--text-opacity)] [--text-opacity:100%] text-shadow-none none hover:text-red-700/[var(--text-opacity)] data-[state=active]:text-red-700/[var(--text-opacity)] hover:[--text-opacity:100%] data-[state=active]:[--text-opacity:100%] hover:text-shadow-none data-[state=active]:text-shadow-none hover:none data-[state=active]:none" href="./" data-state="active"> <span class="">Home</span> </a> 
+       </nav> 
+      </div>
+      <div class="group/rw1DDB4E01_B362_49E6_9CEA_B162D522EB73 group/flex transform flex w-auto h-auto gap-x-2 gap-y-0 flex-row flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+       <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-800 dark:text-text-900 text-opacity-[45%] dark:text-opacity-[45%] font-heading text-sm font-[400] tracking-wide leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-brand-50">Webdesign by</span><span class="text-brand-600"> </span><span class="text-brand-600"><a href="https://www.pieceofcode.be" target="_blank">Piece Of Code</a></span> </h1> 
+      </div> 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-black-950 dark:bg-black-950 bg-opacity-[60%] dark:bg-opacity-[60%] overflow-hidden"> 
+    </div> 
+   </section> 
+  </div> 
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll("[data-reveal]");
+        revealElements.forEach((element, index) => {
+            element.style.visibility = "hidden";
+            element.style.transitionProperty = "none";
+
+            const {
+                revealAnimation: animation = "fadeUpIn",
+                revealExitAnimation: exitAnimation = "fadeUpOut",
+                revealPlay: play = "enter-exit",
+                revealStart: start = "top bottom",
+                revealEnd: end = "top top",
+                revealDelay: delay = 0,
+                revealDuration: duration = 0.5,
+                revealEasing: easing = "power1.out",
+                revealDistance: distance = 200,
+                revealDegrees: degrees = 90,
+                revealScrub: scrub = false,
+                revealDebug: debug = false,
+                revealId,
+            } = element.dataset;
+
+            const id = `${revealId}-${index}`;
+            const wantsScrub = scrub === "true";
+            const wantsDebug = debug === "true";
+            const wantsExitAnimation = play == "enter-exit";
+            const playOnce = play == "enter-once";
+            const durationNumber = parseFloat(duration);
+            const delayNumber = parseFloat(delay);
+            const degreesNumber = parseFloat(degrees);
+            const degreesNumberOut = degreesNumber * -1;
+            
+            let triggeredOnce = false;
+            
+            const config = {
+                duration: durationNumber,
+                ease: easing,
+                delay: delayNumber,
+                distance: distance,
+                degrees: degreesNumber,
+                degreesOut: degreesNumberOut,
+                clearProps: "auto",
+                onComplete: () => {
+                    element.style.transitionProperty = "";
+                },
+            }
+
+            const markers = wantsDebug
+                ? {
+                    startColor: "green",
+                    endColor: "red",
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    indent: 20,
+                }
+                : false;
+
+            if (wantsScrub) {
+                gsap.effects[animation](element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: start,
+                        end: end,
+                        scrub: true,
+                        markers,
+                        id,
+                    },
+                    ...config
+                });
+            } else {
+                ScrollTrigger.create({
+                    trigger: element,
+                    start: start,
+                    end: end,
+                    markers,
+                    id,
+                    onEnter: () => {
+                        if (playOnce && triggeredOnce) return;
+                        element.style.transitionProperty = "none";
+                        triggeredOnce = true;
+                        gsap.effects[animation](element, config);
+                    },
+                    onLeave: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                    onEnterBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[animation](element, config);
+                        }
+                    },
+                    onLeaveBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                });
+            }
+        });
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("desktopSubmenu", () => ({
+            open: false,
+            closeTimeout: null,
+            closeDelay: 300,
+
+            openMenu() {
+                clearTimeout(this.closeTimeout);
+                this.open = true;
+            },
+
+            startCloseTimer() {
+                this.closeTimeout = setTimeout(() => {
+                    this.closeMenu();
+                }, this.closeDelay);
+            },
+
+            cancelCloseTimer() {
+                clearTimeout(this.closeTimeout);
+            },
+
+            closeMenu() {
+                this.open = false;
+            },
+
+            handleMouseEnter() {
+                this.openMenu();
+            },
+
+            handleMouseLeave() {
+                this.startCloseTimer();
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("navigationStandard", (id = null) => ({
+            id,
+            open: false,
+
+            init() {
+                window.addEventListener("navigation-standard-close", (e) => {
+                    if (this.id === e.detail) {
+                        this.close();
+                    }
+                });
+
+                window.addEventListener("navigation-standard-toggle", (e) => {
+                    if (this.id === e.detail) {
+                        this.toggle();
+                    }
+                });
+
+                window.addEventListener("keyup", (e) => {
+                    if (e.key === "Escape") {
+                        this.close();
+                    }
+                });
+
+                this.$el.addEventListener("click", (e) => {
+                    const link = e.target.closest("a");
+                    if (link && this.open) {
+                        this.close();
+                    }
+                });
+
+                this.$watch("open", (value) => {
+                    if (value) {
+                        document.body.style.overflow = "hidden";
+                    } else {
+                        document.body.style.overflow = "auto";
+                    }
+                });
+            },
+
+            toggle() {
+                if (this.open) {
+                    return this.close();
+                }
+
+                this.open = true;
+            },
+
+            close() {
+                if (!this.open) {
+                    return;
+                }
+
+                this.open = false;
+            },
+
+            backdrop: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click"]() {
+                    this.close();
+                },
+            },
+
+            menu: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click.away"]() {
+                    this.close();
+                },
+            },
+        }));
+    });
+</script>  
+ </body>
+</html>

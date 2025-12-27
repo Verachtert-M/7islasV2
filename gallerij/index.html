@@ -1,0 +1,549 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+ <head> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-collapse.js?rwcache=788541903"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-focus.js?rwcache=788541903"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-intersect.js?rwcache=788541903"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine-ui.js?rwcache=788541903"></script> 
+  <script defer src="../rw/elements/com.realmac.corepack/alpine.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/smoothscroll.min.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/gsap.min.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/ScrollTrigger.min.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/gsap-effects.js?rwcache=788541903"></script> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+  <meta name="viewport" content="width=device-width" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="canonical" href="https://www.multithemes.com/elements/future/gallerij/" /> 
+  <meta name="robots" content="index, follow" /> 
+  <meta name="formatter" content="RapidWeaver Elements (Pro license) 1.6.2 (23988)" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:site_name" content="MY WEBSITE" /> 
+  <meta property="og:title" content="Gallerij" /> 
+  <meta property="og:url" content="https://www.multithemes.com/elements/future/gallerij/" /> 
+  <title>Gallerij</title> 
+  <link href="index.css?rwcache=788541903" media="all" rel="stylesheet" type="text/css" /> 
+  <script src="../rw/elements/com.realmac.corepack/effectsTransforms.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/modal.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-store-filters.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-store-transitions.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/alpine-exit-intent.js?rwcache=788541903"></script> 
+  <script src="../rw/elements/com.realmac.corepack/image-lightbox.js?rwcache=788541903"></script> 
+  <style lang="css">
+    /* Required for alpine.js x-cloak directive to work */
+    [x-cloak] {
+        display: none !important;
+    }
+
+    [data-rwx-droparea] {
+        /* width: 100%; */
+        min-width: 60px !important;
+        /* height: 100%; */
+    }
+
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style> 
+  <link rel="stylesheet" type="text/css" media="all" href="../rw/styles/consolidated.css?rwcache=788541903" /> 
+ </head> 
+ <body class="bg-surface-200 dark:bg-surface-800"> 
+  <div x-data="navigationStandard('mobile-menu-rwB85ED184_D202_4BDA_8B76_BDB3A19F4E97')" class="relative z-50"> 
+   <div style="display: none" x-bind="backdrop" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 duration-150 pointer-events-none bg-black-500 bg-opacity-[0%] dark:bg-opacity-[0%] backdrop-blur-[0px]" aria-hidden="true"></div> 
+   <div style="display: none" x-bind="menu" x-transition:enter="transition ease-out" x-transition:enter-start="opacity-0 -translate-y-full" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-full" class="fixed z-50 origin-top p-8 ring-1 ring-zinc-900/5 duration-150 overflow-y-auto bg-black-900 bg-opacity-[90%] dark:bg-opacity-[90%] backdrop-blur-[0px] shadow-none rounded-tl-md rounded-tr-md rounded-bl-md rounded-br-md border-t-0 border-r-0 border-b-0 border-l-0 border-black-900 top-4 right-2.5 bottom-auto left-2.5" tabindex="-1"> 
+    <div class="flex items-center justify-between"> 
+     <button aria-label="Close menu" type="button" @click="open = false" class="transition-all duration-[300ms] delay-[0ms] ease-in-out absolute inline-flex items-center justify-center rounded-md p-2.5 cursor-pointer text-text-950 hover:text-surface-200 top-8 right-8"> 
+      <svg viewbox="0 0 24 24" aria-hidden="true" class="size-6 transition-colors duration-300 text-text-600 hover:text-text-950"> 
+       <path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+      </svg> </button> 
+    </div> 
+    <nav> 
+     <ul class=""> 
+      <li x-data="{ open: false }" class="cursor-pointer"> 
+       <div class="block py-2 text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-body text-lg text-shadow-none font-[300] tracking-wide hover:text-text-950 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out flex items-center justify-between" @click="open = !open"> 
+        <a class="flex justify-between items-center" href="../">Home</a> 
+       </div> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="overflow-hidden relative block w-full h-full" id="rwEDFECE0F_EDA2_4407_98F0_5287CD305984"> 
+   <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+    <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-[url(../resources/lake.jpg)] bg-cover bg-no-repeat bg-center"> 
+    </div> 
+   </div> 
+   <header class="rw553F735C_3AB9_4C84_8E17_BE4E4E7F11F4 group/container group/rw553F735C_3AB9_4C84_8E17_BE4E4E7F11F4 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute z-[0] inset-0 grid w-full h-[120vh]" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer w-auto h-full self-auto justify-self-auto gap-0">
+     <div class="w-0 h-0 bg-brand-500 bg-opacity-[0%] dark:bg-opacity-[0%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu overflow-hidden"> 
+    </div> 
+    <div class="relative z-20 false  bg-black-950 bg-opacity-[50%] dark:bg-opacity-[50%]"></div> 
+   </header>
+   <header class="group/rwB85ED184_D202_4BDA_8B76_BDB3A19F4E97 group/navbar items-center relative flex container w-full h-auto mt-4 mb-0 ml-auto mr-auto" id=""> 
+    <nav class="mx-auto flex items-center justify-between container w-full h-auto pt-1.5 pb-1.5 pl-3.5 pr-3.5"> 
+     <!-- Logo --> 
+     <div class="flex lg:flex-1 pt-0 pb-0 pl-0 pr-0"> 
+      <span class="sr-only">MY WEBSITE</span> 
+      <img class="w-[100px] h-auto" src="../resources/7blank.png" alt="" /> 
+     </div> 
+     <!-- Mobile menu button --> 
+     <div class="flex lg:hidden"> 
+      <div x-data @click="$dispatch('navigation-standard-toggle', 'mobile-menu-rwB85ED184_D202_4BDA_8B76_BDB3A19F4E97')" class="cursor-pointer text-text-950 hover:text-surface-200"> 
+       <div class="w-8 h-auto block" id="" rwresourcedropzone="svg"> 
+        <svg class="w-8 h-auto" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+         <path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z" />
+        </svg> 
+       </div> 
+      </div> 
+     </div> 
+     <!-- Desktop items --> 
+     <div class="hidden lg:flex gap-10"> 
+      <div x-data="desktopSubmenu" class="relative"> 
+       <a href="../" @mouseover="handleMouseEnter" @mouseleave="handleMouseLeave" class="flex items-center  text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-body text-lg text-shadow-none font-[300] tracking-wide hover:text-text-950 hover:text-opacity-[100%] dark:hover:text-opacity-[100%] hover:text-shadow-none hover: transition-all duration-[300ms] delay-[0ms] ease-in-out "> Home </a> 
+      </div> 
+     </div> 
+     <!-- Desktop right items --> 
+     <div class="hidden lg:flex lg:justify-end lg:flex-1"> 
+     </div> 
+    </nav> 
+   </header>
+   <div class="rw35B7347E_3A4B_4160_BA3D_E07D073B67E1 group/container group/rw35B7347E_3A4B_4160_BA3D_E07D073B67E1 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto min-w-0 min-h-[95vh] max-w-auto max-h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer w-full h-auto self-center justify-self-center gap-md pt-0 pb-40 pl-0 pr-0">
+     <div class="group/rwBC501A84_EF36_4C6D_9E96_17E637B8ACE8 group/reveal block block w-full h-auto" data-reveal="" data-reveal-animation="fadeUpIn" data-reveal-degrees="90" data-reveal-delay="0" data-reveal-distance="0px" data-reveal-duration="0.6" data-reveal-easing="power0" data-reveal-end="top top" data-reveal-exit-animation="fadeUpOut" data-reveal-id="reveal----fade" data-reveal-play="enter-exit" data-reveal-scrub="false" data-reveal-start="top center"> 
+      <div class="rw400B12BB_16A2_48EF_BEA6_BC8C0160A8B9 group/container group/rw400B12BB_16A2_48EF_BEA6_BC8C0160A8B9 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-full mt-auto mb-auto ml-auto mr-auto anima-overlayXX" data-filter-tags="" id=""> 
+       <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-2 pt-auto pb-auto pl-0 pr-0">
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-white-50 dark:text-text-900 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-5xl sm:text-7xl lg:text-8xl font-[700] tracking-tight leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Canarische Eilanden </h1>
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-700 dark:text-text-900 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg sm:text-2xl md:text-3xl font-[400] tracking-normal leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Welkom op mijn persoonlijke <span class="text-brand-500">gallerij</span> </h1>
+        <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-800 dark:text-text-900 text-opacity-[45%] dark:text-opacity-[45%] font-heading text-sm font-[400] tracking-wide leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-brand-50">Waar mijn </span><span class="text-brand-600">avontuur</span><span class="text-brand-50"> begint!</span> </h1>
+       </div> 
+       <div class="z-0 transform-gpu overflow-hidden"> 
+       </div> 
+      </div> 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu overflow-hidden"> 
+    </div> 
+   </div>
+   <div class="rw338FE304_CF82_4BB6_8F1C_AC2741BA77BB group/container group/rw338FE304_CF82_4BB6_8F1C_AC2741BA77BB [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute top-auto right-md bottom-auto left-md grid w-[110%] h-[250px] transform origin-center scale-[100%] rotate-[-6deg] skew-x-[0deg] skew-y-[0deg] translate-x-[-25px] translate-y-[-120px] mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+     <div class="w-0 h-0 bg-brand-700 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-white-600 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    </div> 
+   </div> 
+  </div>
+  <div class="rw868C82EF_6DC3_4940_9338_2053638E735C group/container group/rw868C82EF_6DC3_4940_9338_2053638E735C [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto" data-filter-tags="" id=""> 
+   <div class="relative z-30 flex flex-col peer w-full h-auto self-center justify-self-center gap-md">
+    <section class="rwD0E5C78B_09EA_47DA_BD2C_50A4E9541286 group/container group/rwD0E5C78B_09EA_47DA_BD2C_50A4E9541286 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-0 pb-20 pl-5 pr-5">
+      <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[8och] block w-auto h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-text-100 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-6xl font-[500] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Portfolio </h2>
+      <h3 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-10 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-text-500 dark:text-text-600 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lorem ipsum veniam anim ea veniam magna ut esse dolor dolore ex aliquip ullamco. Cillum nisi veniam, aliqua sunt ex voluptate veniam ullamco. </h3>
+      <div class="group/rw7A0A4C44_1005_41EE_95B2_8F12AB55A82D group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-x-5 gap-y-5 grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div>
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div>
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div>
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div>
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div>
+       <div class="transform-gpu block w-[100%] h-auto" id="" rwresourcedropzone="image"> 
+        <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[1/1]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+       </div> 
+      </div>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </section>
+    <div class="overflow-hidden relative block w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="rw96237B3F_5DD9_4481_A586_FC5B66E19B4F"> 
+     <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+      <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-gradient-to-t from-red-950/[--bgGradientFromOpacity] [--bgGradientFromOpacity:100%] from-[49%] to-red-800/[--bgGradientToOpacity] [--bgGradientToOpacity:100%] to-[100%]"> 
+      </div> 
+     </div> 
+     <section class="rw88CE95A6_A9C9_4130_A3E2_0A6309B0B505 group/container group/rw88CE95A6_A9C9_4130_A3E2_0A6309B0B505 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+      <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-10 pb-10 pl-5 pr-5 lg:pt-20 lg:pb-20 lg:pl-5 lg:pr-5 xl:pt-28 xl:pb-28 xl:pl-5 xl:pr-5">
+       <div class="group/rw20C83FDD_808D_48E6_B681_B24BDEA2F8CF group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-2 md:grid-cols-4 grid-rows-auto gap-x-5 gap-y-5 grid-flow-row justify-items-normal justify-normal items-[normal] content-normal" data-filter-tags="" id=""> 
+        <div class="group/rwD79CB2C9_F4E6_4ABF_B6A1_E270243A95A0 group/flex transform flex w-full h-auto mt-0 mb-0 ml-0 mr-0 pt-5 pb-5 pl-5 pr-5 bg-white-100 dark:bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-3 gap-y-3 flex-col flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <div class="rw60FFA47D_4E3B_497B_8737_DE1FA8691200 group/container group/rw60FFA47D_4E3B_497B_8737_DE1FA8691200 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl rounded-tr rounded-bl rounded-br" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-6 pb-6 pl-6 pr-6">
+           <div class="w-14 h-auto block" id="" rwresourcedropzone="svg"> 
+            <svg class="w-14 h-auto fill-surface-50/[--svgOpacity] text-surface-50/[--svgOpacity] dark:fill-surface-50/[--svgOpacity] dark:text-surface-50/[--svgOpacity] [--svgOpacity:_100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+             <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z" />
+            </svg> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-400/[100%] bg-[url(../resources/future-images/banner_image.jpg)] bg-auto bg-no-repeat bg-center overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="group/rwD9C3BA7F_4946_4089_BA0B_35A4B3A2F657 group/flex transform flex w-full h-auto gap-x-3 gap-y-3 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-3xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Feature 1 </h1>
+          <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-400 dark:text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2> 
+         </div> 
+        </div>
+        <div class="group/rw2F85DF97_4918_4055_BEFF_BFF71474F3AA group/flex transform flex w-full h-auto mt-0 mb-0 ml-0 mr-0 pt-5 pb-5 pl-5 pr-5 bg-white-100 dark:bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-3 gap-y-3 flex-col flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <div class="rw7A5A988A_52A4_4E1B_86DD_F71B286F09AE group/container group/rw7A5A988A_52A4_4E1B_86DD_F71B286F09AE [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl rounded-tr rounded-bl rounded-br" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-6 pb-6 pl-6 pr-6">
+           <div class="w-14 h-auto block" id="" rwresourcedropzone="svg"> 
+            <svg class="w-14 h-auto fill-surface-50/[--svgOpacity] text-surface-50/[--svgOpacity] dark:fill-surface-50/[--svgOpacity] dark:text-surface-50/[--svgOpacity] [--svgOpacity:_100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+             <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z" />
+            </svg> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-400/[100%] bg-[url(../resources/future-images/banner_image.jpg)] bg-auto bg-no-repeat bg-top overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="group/rw3997539E_7D8F_4097_9FE0_C0B3FCDB9421 group/flex transform flex w-full h-auto gap-x-3 gap-y-3 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-3xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Feature 2 </h1>
+          <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-400 dark:text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lorem ipsum dolor sit amet, consectconvallis tortor. </h2> 
+         </div> 
+        </div>
+        <div class="group/rwB56A13BA_CDDC_4848_8FB4_CF1456A4FDB1 group/flex transform flex w-full h-auto mt-0 mb-0 ml-0 mr-0 pt-5 pb-5 pl-5 pr-5 bg-white-100 dark:bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-3 gap-y-3 flex-col flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <div class="rw056CA6CF_770D_4813_A976_FD9AB9375557 group/container group/rw056CA6CF_770D_4813_A976_FD9AB9375557 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl rounded-tr rounded-bl rounded-br" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-6 pb-6 pl-6 pr-6">
+           <div class="w-14 h-auto block" id="" rwresourcedropzone="svg"> 
+            <svg class="w-14 h-auto fill-surface-50/[--svgOpacity] text-surface-50/[--svgOpacity] dark:fill-surface-50/[--svgOpacity] dark:text-surface-50/[--svgOpacity] [--svgOpacity:_100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+             <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z" />
+            </svg> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-400/[100%] bg-[url(../resources/future-images/banner_image.jpg)] bg-auto bg-no-repeat bg-right overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="group/rw71830442_14B9_426C_983F_BD101A2B29B5 group/flex transform flex w-full h-auto gap-x-3 gap-y-3 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-3xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Feature 3 </h1>
+          <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-400 dark:text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lorem consectetur adipiscing elitIn convallis tortor. </h2> 
+         </div> 
+        </div>
+        <div class="group/rw461DAECD_6B79_4B28_B9FB_26DCE9CE25F6 group/flex transform flex w-full h-auto mt-0 mb-0 ml-0 mr-0 pt-5 pb-5 pl-5 pr-5 bg-white-100 dark:bg-surface-900 bg-opacity-[100%] dark:bg-opacity-[100%] border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] gap-x-3 gap-y-3 flex-col flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+         <div class="rw5E7225DF_8497_404F_B7DA_6CF15D1547E5 group/container group/rw5E7225DF_8497_404F_B7DA_6CF15D1547E5 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-auto h-auto mt-0 mb-0 ml-auto mr-auto rounded-tl rounded-tr rounded-bl rounded-br" data-filter-tags="" id=""> 
+          <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-6 pb-6 pl-6 pr-6">
+           <div class="w-14 h-auto block" id="" rwresourcedropzone="svg"> 
+            <svg class="w-14 h-auto fill-surface-50/[--svgOpacity] text-surface-50/[--svgOpacity] dark:fill-surface-50/[--svgOpacity] dark:text-surface-50/[--svgOpacity] [--svgOpacity:_100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 -960 960 960" fill="currentColor">
+             <path d="M440-440H240q-17 0-28.5-11.5T200-480q0-17 11.5-28.5T240-520h200v-200q0-17 11.5-28.5T480-760q17 0 28.5 11.5T520-720v200h200q17 0 28.5 11.5T760-480q0 17-11.5 28.5T720-440H520v200q0 17-11.5 28.5T480-200q-17 0-28.5-11.5T440-240v-200Z" />
+            </svg> 
+           </div>
+          </div> 
+          <div class="z-0 transform-gpu border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-400/[100%] bg-[url(../resources/future-images/banner_image.jpg)] bg-auto bg-no-repeat bg-left-bottom overflow-hidden"> 
+          </div> 
+         </div>
+         <div class="group/rw70F74834_4EFA_4B1A_B672_6809D6FA4CCB group/flex transform flex w-full h-auto gap-x-3 gap-y-3 flex-col flex-nowrap items-[normal] justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+          <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-50 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-3xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Feature 4 </h1>
+          <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-0 mr-0 pt-0 pb-0 pl-0 pr-0 text-text-400 dark:text-text-700 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-base font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-center" id=""> Lorem ipsut, consectescing elitIn convallis tortor. </h2> 
+         </div> 
+        </div> 
+       </div>
+      </div> 
+      <div class="z-0 transform-gpu overflow-hidden"> 
+      </div> 
+     </section> 
+    </div>
+    <section class="rw1E0809D9_D5C4_4F62_AFFD_88AFD8DC9F1B group/container group/rw1E0809D9_D5C4_4F62_AFFD_88AFD8DC9F1B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+     <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-20 pb-0 pl-5 pr-5 lg:pt-28 lg:pb-0 lg:pl-5 lg:pr-5">
+      <div class="group/rw7239078E_B00F_470D_BB06_9B3F08C305C5 group/grid grid w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 grid-cols-1 md:grid-cols-2 grid-rows-auto gap-x-5 gap-y-5 grid-flow-row justify-items-[normal] justify-normal items-center content-normal" data-filter-tags="" id=""> 
+       <div class="rw4D69EF24_55D8_4B25_A1C1_5A612B7B783B group/container group/rw4D69EF24_55D8_4B25_A1C1_5A612B7B783B [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+        <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-5 pt-0 pb-0 pl-0 pr-0">
+         <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-100 dark:text-text-950 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-4xl font-[600] tracking-normal leading-none not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Dolor dolore ex aliquip </h1>
+         <h2 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] max-w-[80ch] block w-auto h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0 text-text-400 dark:text-text-600 text-opacity-[100%] dark:text-opacity-[100%] font-heading text-lg font-[400] tracking-normal leading-normal not-italic text-shadow-none normal-case whitespace-none text-left" id=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br /> </h2>
+        </div> 
+        <div class="z-0 transform-gpu overflow-hidden"> 
+        </div> 
+       </div>
+       <div class="rw3F8A9782_5061_492E_B6CC_E4CE4F5BC0C9 group/container group/rw3F8A9782_5061_492E_B6CC_E4CE4F5BC0C9 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+        <div class="relative z-30 flex flex-col peer container w-full h-auto self-start justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+         <div class="transform-gpu block w-[100%] h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="" rwresourcedropzone="image"> 
+          <img class="max-w-[100%] w-full border-t-0 border-r-0 border-b-0 border-l-0 border-solid rounded-tl rounded-tr rounded-bl rounded-br border-surface-500/[100%] object-cover object-center aspect-[16/9]" src="../rw/elements/com.realmac.corepack/images/image-square.png" alt="" /> 
+         </div>
+        </div> 
+        <div class="z-0 transform-gpu overflow-hidden"> 
+        </div> 
+       </div> 
+      </div>
+     </div> 
+     <div class="z-0 transform-gpu overflow-hidden"> 
+     </div> 
+    </section>
+   </div> 
+   <div class="z-0 transform-gpu bg-white-50 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+   </div> 
+  </div>
+  <div class="overflow-hidden relative block w-full h-auto mt-0 mb-0 ml-auto mr-auto pt-0 pb-0 pl-0 pr-0" id="rw07BFD99F_A1AF_46B1_8114_CBC987221881"> 
+   <div class="[clip:rect(0,_auto,_auto,_0)] absolute top-0 left-0 w-full h-full -z-10"> 
+    <div class="block w-full h-full top-0 left-0 -z-10 fixed [will-change:transform] [transform:translateZ(0)] bg-[url(../resources/landscape-07.jpg)] bg-cover bg-no-repeat bg-center"> 
+    </div> 
+   </div> 
+   <div class="rwFDF155F6_4012_4199_A102_7DFDD2238B4F group/container group/rwFDF155F6_4012_4199_A102_7DFDD2238B4F [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 absolute z-[1] top-auto right-md bottom-auto left-md grid lg:grid w-[110%] h-[270px] transform origin-center scale-[100%] rotate-[-6deg] skew-x-[0deg] skew-y-[0deg] translate-x-[-25px] translate-y-[-140px] mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-md pt-0 pb-0 pl-0 pr-0">
+     <div class="w-0 h-0 bg-brand-700 bg-opacity-[100%] dark:bg-opacity-[100%]" aria-orientation="horizontal" id="" role="separator">
+       &nbsp; 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-white-600 dark:bg-surface-950 bg-opacity-[100%] dark:bg-opacity-[100%] overflow-hidden"> 
+    </div> 
+   </div>
+   <section class="rw2D1D2FAD_D572_4F96_9EF6_1D07CFEDD7D4 group/container group/rw2D1D2FAD_D572_4F96_9EF6_1D07CFEDD7D4 [&amp;>*]:col-start-1 [&amp;>*]:row-start-1 isolate grid w-full h-auto mt-0 mb-0 ml-auto mr-auto" data-filter-tags="" id=""> 
+    <div class="relative z-30 flex flex-col peer container w-full h-auto self-center justify-self-center gap-5 pt-52 pb-20 pl-5 pr-5 sm:pt-48 sm:pb-20 sm:pl-5 sm:pr-5">
+     <div class="group/rw6ABA62BC_A415_4337_A1D1_D007E7376104 group/flex transform flex w-auto h-auto mt-0 mb-0 ml-auto mr-0 pt-0 pb-0 pl-0 pr-0 gap-x-2.5 gap-y-2 flex-row flex-nowrap items-center justify-items-[normal] content-normal justify-end" data-filter-tags="" id=""> 
+      <div class="w-7 h-auto block transition-all duration-[300ms] delay-[0ms] ease-in-out transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[0px] hover:scale-[95%] hover:rotate-[0deg] hover:skew-x-[0deg] hover:skew-y-[0deg] hover:translate-x-[0px] hover:translate-y-[0px]" id="" rwresourcedropzone="svg"> 
+       <svg class="w-7 h-auto transition-all duration-[300ms] delay-[0ms] ease-in-out fill-white-300/[--svgOpacity] text-white-300/[--svgOpacity] [--svgOpacity:_40%] hover:fill-white-500/[--svgOpacity] hover:text-white-500/[--svgOpacity] hover:[--svgOpacity:100%]" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+        <path d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"></path>
+       </svg> 
+      </div> 
+     </div>
+     <div class="group/rw9894D16F_8DE4_4484_B414_99FA43C57BAC group/flex transform flex w-full h-auto transform origin-center scale-[100%] rotate-[0deg] skew-x-[0deg] skew-y-[0deg] translate-x-[0px] translate-y-[-0px] gap-x-0 gap-y-0 flex-row flex-wrap items-center justify-items-[normal] content-normal justify-between" data-filter-tags="" id=""> 
+      <div class="group/rw46092814_2C3F_4EC9_848D_AD75DFF10AF2 group/flex transform flex w-auto h-auto gap-x-2 gap-y-0 flex-row flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+       <nav class="flex flex-row items-center justify-start gap-3 w-auto h-auto"> 
+        <a class="flex items-center transition-all duration-[300ms] delay-[0ms] ease-in-out font-heading text-sm font-[400] tracking-normal normal hover text-text-600/[var(--text-opacity)] [--text-opacity:100%] text-shadow-none none hover:text-red-700/[var(--text-opacity)] data-[state=active]:text-red-700/[var(--text-opacity)] hover:[--text-opacity:100%] data-[state=active]:[--text-opacity:100%] hover:text-shadow-none data-[state=active]:text-shadow-none hover:none data-[state=active]:none" href="../" data-state=""> <span class="">Home</span> </a> 
+       </nav> 
+      </div>
+      <div class="group/rwD826921E_D43C_4237_8268_624CBF4498FA group/flex transform flex w-auto h-auto gap-x-2 gap-y-0 flex-row flex-nowrap items-center justify-items-normal content-normal justify-normal" data-filter-tags="" id=""> 
+       <h1 class="[&amp;_a]:text-brand-500 [&amp;_a]:no-underline [&amp;_a]:font-[400] [&amp;_a:hover]:text-brand-800 [&amp;_a:hover]:no-underline [&amp;_a:hover]:font-[400] [&amp;_a:visited]:text-brand-800 [&amp;_a:visited]:no-underline [&amp;_a:visited]:font-[400] block w-auto h-auto text-text-800 dark:text-text-900 text-opacity-[45%] dark:text-opacity-[45%] font-heading text-sm font-[400] tracking-wide leading-tight not-italic text-shadow-none normal-case whitespace-none text-center" id=""> <span class="text-brand-50">Webdesign by</span><span class="text-brand-600"> </span><span class="text-brand-600"><a href="https://www.pieceofcode.be" target="_blank">Piece Of Code</a></span> </h1> 
+      </div> 
+     </div>
+    </div> 
+    <div class="z-0 transform-gpu bg-black-950 dark:bg-black-950 bg-opacity-[60%] dark:bg-opacity-[60%] overflow-hidden"> 
+    </div> 
+   </section> 
+  </div> 
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealElements = document.querySelectorAll("[data-reveal]");
+        revealElements.forEach((element, index) => {
+            element.style.visibility = "hidden";
+            element.style.transitionProperty = "none";
+
+            const {
+                revealAnimation: animation = "fadeUpIn",
+                revealExitAnimation: exitAnimation = "fadeUpOut",
+                revealPlay: play = "enter-exit",
+                revealStart: start = "top bottom",
+                revealEnd: end = "top top",
+                revealDelay: delay = 0,
+                revealDuration: duration = 0.5,
+                revealEasing: easing = "power1.out",
+                revealDistance: distance = 200,
+                revealDegrees: degrees = 90,
+                revealScrub: scrub = false,
+                revealDebug: debug = false,
+                revealId,
+            } = element.dataset;
+
+            const id = `${revealId}-${index}`;
+            const wantsScrub = scrub === "true";
+            const wantsDebug = debug === "true";
+            const wantsExitAnimation = play == "enter-exit";
+            const playOnce = play == "enter-once";
+            const durationNumber = parseFloat(duration);
+            const delayNumber = parseFloat(delay);
+            const degreesNumber = parseFloat(degrees);
+            const degreesNumberOut = degreesNumber * -1;
+            
+            let triggeredOnce = false;
+            
+            const config = {
+                duration: durationNumber,
+                ease: easing,
+                delay: delayNumber,
+                distance: distance,
+                degrees: degreesNumber,
+                degreesOut: degreesNumberOut,
+                clearProps: "auto",
+                onComplete: () => {
+                    element.style.transitionProperty = "";
+                },
+            }
+
+            const markers = wantsDebug
+                ? {
+                    startColor: "green",
+                    endColor: "red",
+                    fontSize: "12px",
+                    fontWeight: "bold",
+                    indent: 20,
+                }
+                : false;
+
+            if (wantsScrub) {
+                gsap.effects[animation](element, {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: start,
+                        end: end,
+                        scrub: true,
+                        markers,
+                        id,
+                    },
+                    ...config
+                });
+            } else {
+                ScrollTrigger.create({
+                    trigger: element,
+                    start: start,
+                    end: end,
+                    markers,
+                    id,
+                    onEnter: () => {
+                        if (playOnce && triggeredOnce) return;
+                        element.style.transitionProperty = "none";
+                        triggeredOnce = true;
+                        gsap.effects[animation](element, config);
+                    },
+                    onLeave: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                    onEnterBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[animation](element, config);
+                        }
+                    },
+                    onLeaveBack: () => {
+                        if (wantsExitAnimation) {
+                            element.style.transitionProperty = "none";
+                            gsap.effects[exitAnimation](element, { delay: 0, ...config });
+                        }
+                    },
+                });
+            }
+        });
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("desktopSubmenu", () => ({
+            open: false,
+            closeTimeout: null,
+            closeDelay: 300,
+
+            openMenu() {
+                clearTimeout(this.closeTimeout);
+                this.open = true;
+            },
+
+            startCloseTimer() {
+                this.closeTimeout = setTimeout(() => {
+                    this.closeMenu();
+                }, this.closeDelay);
+            },
+
+            cancelCloseTimer() {
+                clearTimeout(this.closeTimeout);
+            },
+
+            closeMenu() {
+                this.open = false;
+            },
+
+            handleMouseEnter() {
+                this.openMenu();
+            },
+
+            handleMouseLeave() {
+                this.startCloseTimer();
+            },
+        }));
+    });
+</script> 
+  <script>
+    document.addEventListener("alpine:init", () => {
+        Alpine.data("navigationStandard", (id = null) => ({
+            id,
+            open: false,
+
+            init() {
+                window.addEventListener("navigation-standard-close", (e) => {
+                    if (this.id === e.detail) {
+                        this.close();
+                    }
+                });
+
+                window.addEventListener("navigation-standard-toggle", (e) => {
+                    if (this.id === e.detail) {
+                        this.toggle();
+                    }
+                });
+
+                window.addEventListener("keyup", (e) => {
+                    if (e.key === "Escape") {
+                        this.close();
+                    }
+                });
+
+                this.$el.addEventListener("click", (e) => {
+                    const link = e.target.closest("a");
+                    if (link && this.open) {
+                        this.close();
+                    }
+                });
+
+                this.$watch("open", (value) => {
+                    if (value) {
+                        document.body.style.overflow = "hidden";
+                    } else {
+                        document.body.style.overflow = "auto";
+                    }
+                });
+            },
+
+            toggle() {
+                if (this.open) {
+                    return this.close();
+                }
+
+                this.open = true;
+            },
+
+            close() {
+                if (!this.open) {
+                    return;
+                }
+
+                this.open = false;
+            },
+
+            backdrop: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click"]() {
+                    this.close();
+                },
+            },
+
+            menu: {
+                ["x-show"]() {
+                    return this.open;
+                },
+                ["@click.away"]() {
+                    this.close();
+                },
+            },
+        }));
+    });
+</script>  
+ </body>
+</html>
