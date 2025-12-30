@@ -33,12 +33,15 @@
     .mb-10{margin-bottom:2.5rem}
     .mb-auto{margin-bottom:auto}
     .ml-0{margin-left:0.0rem}
+    .ml-1{margin-left:0.25rem}
     .ml-2{margin-left:0.5rem}
     .ml-auto{margin-left:auto}
     .mr-0{margin-right:0.0rem}
     .mr-2{margin-right:0.5rem}
     .mr-auto{margin-right:auto}
     .mt-0{margin-top:0.0rem}
+    .mt-1{margin-top:0.25rem}
+    .mt-2{margin-top:0.5rem}
     .mt-4{margin-top:1.0rem}
     .mt-auto{margin-top:auto}
     .block{display:block}
@@ -50,6 +53,8 @@
     .aspect-\[undefined\]{aspect-ratio:undefined}
     .size-6{width:1.5rem;height:1.5rem}
     .h-0{height:0.0rem}
+    .h-4{height:1.0rem}
+    .h-6{height:1.5rem}
     .h-\[120vh\]{height:120vh}
     .h-\[250px\]{height:250px}
     .h-\[270px\]{height:270px}
@@ -58,6 +63,8 @@
     .max-h-auto{max-height:auto}
     .min-h-\[95vh\]{min-height:95vh}
     .w-0{width:0.0rem}
+    .w-4{width:1.0rem}
+    .w-6{width:1.5rem}
     .w-7{width:1.75rem}
     .w-8{width:2.0rem}
     .w-\[100\%\]{width:100%}
@@ -65,6 +72,7 @@
     .w-\[110\%\]{width:110%}
     .w-auto{width:auto}
     .w-full{width:100%}
+    .w-max{width:-moz-max-content;width:max-content}
     .min-w-0{min-width:0.0rem}
     .max-w-\[100\%\]{max-width:100%}
     .max-w-\[80ch\]{max-width:80ch}
@@ -73,6 +81,7 @@
     .flex-1{flex:1 1 0%}
     .origin-center{transform-origin:center}
     .origin-top{transform-origin:top}
+    .-translate-y-3{--tw-translate-y:-0.75rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .-translate-y-full{--tw-translate-y:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .translate-x-\[-25px\]{--tw-translate-x:-25px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .translate-x-\[0px\]{--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
@@ -81,6 +90,7 @@
     .translate-y-\[-120px\]{--tw-translate-y:-120px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .translate-y-\[-140px\]{--tw-translate-y:-140px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .translate-y-\[0px\]{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+    .rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .rotate-\[-6deg\]{--tw-rotate:-6deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .rotate-\[0deg\]{--tw-rotate:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .skew-x-\[0deg\]{--tw-skew-x:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
@@ -116,6 +126,7 @@
     .gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}
     .gap-x-9{-moz-column-gap:2.25rem;column-gap:2.25rem}
     .gap-y-0{row-gap:0.0rem}
+    .gap-y-1{row-gap:0.25rem}
     .gap-y-2{row-gap:0.5rem}
     .gap-y-3{row-gap:0.75rem}
     .gap-y-5{row-gap:1.25rem}
@@ -170,7 +181,7 @@
     .bg-opacity-\[50\%\]{--tw-bg-opacity:50%}
     .bg-opacity-\[60\%\]{--tw-bg-opacity:60%}
     .bg-opacity-\[90\%\]{--tw-bg-opacity:90%}
-    .bg-\[url\(\.\.\/resources\/lake\.jpg\)\]{background-image:url(../resources/lake.jpg)}
+    .bg-\[url\(\.\.\/resources\/dunas-maspalomas\.jpg\)\]{background-image:url(../resources/dunas-maspalomas.jpg)}
     .bg-\[url\(\.\.\/resources\/landscape-07\.jpg\)\]{background-image:url(../resources/landscape-07.jpg)}
     .bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}
     .from-red-950\/\[--bgGradientFromOpacity\]{--tw-gradient-from:rgb(69 10 10 / var(--bgGradientFromOpacity)) var(--tw-gradient-from-position);--tw-gradient-to:rgb(69 10 10 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}
@@ -186,6 +197,7 @@
     .p-2{padding:0.5rem}
     .p-2\.5{padding:0.625rem}
     .p-8{padding:2.0rem}
+    .px-4{padding-left:1.0rem;padding-right:1.0rem}
     .py-2{padding-top:0.5rem;padding-bottom:0.5rem}
     .pb-0{padding-bottom:0.0rem}
     .pb-1{padding-bottom:0.25rem}
@@ -279,6 +291,7 @@
     .transition{transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
     .transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
     .transition-colors{transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+    .transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
     .delay-\[0ms\]{transition-delay:0ms}
     .duration-150{transition-duration:150ms}
     .duration-300{transition-duration:300ms}
@@ -322,7 +335,7 @@
     @media (min-width: 768px){.md\:col-span-1{grid-column:span 1 / span 1}.md\:aspect-\[4\/5\]{aspect-ratio:4/5}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-3xl{font-size:1.88rem;line-height:2.25rem}}
     @media (min-width: 1024px){.lg\:flex{display:flex}.lg\:grid{display:grid}.lg\:hidden{display:none}.lg\:flex-1{flex:1 1 0%}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:justify-end{justify-content:flex-end}.lg\:pb-20{padding-bottom:5.0rem}.lg\:pb-24{padding-bottom:6.0rem}.lg\:pl-5{padding-left:1.25rem}.lg\:pr-5{padding-right:1.25rem}.lg\:pt-20{padding-top:5.0rem}.lg\:pt-4{padding-top:1.0rem}.lg\:text-8xl{font-size:6.00rem;line-height:6.50rem}}
     @media (min-width: 1280px){.xl\:aspect-\[auto\]{aspect-ratio:auto}.xl\:pb-28{padding-bottom:7.0rem}.xl\:pl-5{padding-left:1.25rem}.xl\:pr-5{padding-right:1.25rem}.xl\:pt-28{padding-top:7.0rem}}
-    @media (prefers-color-scheme: dark){.dark\:bg-black-950{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.dark\:bg-surface-800{--tw-bg-opacity:1;background-color:rgb(60 79 69 / var(--tw-bg-opacity))}.dark\:bg-surface-900{--tw-bg-opacity:1;background-color:rgb(54 68 60 / var(--tw-bg-opacity))}.dark\:bg-surface-950{--tw-bg-opacity:1;background-color:rgb(36 44 40 / var(--tw-bg-opacity))}.dark\:bg-opacity-\[0\%\]{--tw-bg-opacity:0%}.dark\:bg-opacity-\[100\%\]{--tw-bg-opacity:100%}.dark\:bg-opacity-\[50\%\]{--tw-bg-opacity:50%}.dark\:bg-opacity-\[60\%\]{--tw-bg-opacity:60%}.dark\:bg-opacity-\[90\%\]{--tw-bg-opacity:90%}.dark\:text-text-600{--tw-text-opacity:1;color:rgb(138 166 150 / var(--tw-text-opacity))}.dark\:text-text-900{--tw-text-opacity:1;color:rgb(238 242 240 / var(--tw-text-opacity))}.dark\:text-text-950{--tw-text-opacity:1;color:rgb(246 249 247 / var(--tw-text-opacity))}.dark\:text-opacity-\[100\%\]{--tw-text-opacity:100%}.dark\:text-opacity-\[45\%\]{--tw-text-opacity:45%}.dark\:hover\:bg-opacity-\[100\%\]:hover{--tw-bg-opacity:100%}.dark\:hover\:text-opacity-\[100\%\]:hover{--tw-text-opacity:100%}}
+    @media (prefers-color-scheme: dark){.dark\:bg-opacity-\[0\%\]{--tw-bg-opacity:0%}.dark\:bg-opacity-\[100\%\]{--tw-bg-opacity:100%}.dark\:bg-opacity-\[50\%\]{--tw-bg-opacity:50%}.dark\:bg-opacity-\[60\%\]{--tw-bg-opacity:60%}.dark\:bg-opacity-\[90\%\]{--tw-bg-opacity:90%}.dark\:text-opacity-\[100\%\]{--tw-text-opacity:100%}.dark\:text-opacity-\[45\%\]{--tw-text-opacity:45%}.dark\:hover\:bg-opacity-\[100\%\]:hover{--tw-bg-opacity:100%}.dark\:hover\:text-opacity-\[100\%\]:hover{--tw-text-opacity:100%}}
     .\[\&\>\*\]\:col-start-1>*{grid-column-start:1}
     .\[\&\>\*\]\:row-start-1>*{grid-row-start:1}
     .\[\&\>svg\]\:size-\[31px\]>svg{width:31px;height:31px}
@@ -333,7 +346,6 @@
     .\[\&\>svg\]\:duration-300>svg{transition-duration:300ms}
     .group[data-open=false] .\[\&\>svg\]\:group-data-\[open\=false\]\:rotate-\[0deg\]>svg{--tw-rotate:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
     .group[data-open=false] .\[\&\>svg\]\:group-data-\[open\=false\]\:text-text-300>svg{--tw-text-opacity:1;color:rgb(71 93 81 / var(--tw-text-opacity))}
-    @media (prefers-color-scheme: dark){.group[data-open=false] .dark\:\[\&\>svg\]\:group-data-\[open\=false\]\:text-text-950>svg{--tw-text-opacity:1;color:rgb(246 249 247 / var(--tw-text-opacity))}}
     .\[\&_a\:hover\]\:font-\[400\] a:hover{font-weight:400}
     .\[\&_a\:hover\]\:text-brand-600 a:hover{--tw-text-opacity:1;color:rgb(255 93 0 / var(--tw-text-opacity))}
     .\[\&_a\:hover\]\:text-brand-800 a:hover{--tw-text-opacity:1;color:rgb(161 51 11 / var(--tw-text-opacity))}
